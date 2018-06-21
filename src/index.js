@@ -15,20 +15,18 @@ class Menu extends React.Component {
         this.props.trigger === target || this.props.onHide();
       }
     });
+
     const listBCR = this.list.getBoundingClientRect();
+    const triggerBCR = this.props.trigger.getBoundingClientRect();
 
     const offsetY =
       window.innerHeight - (listBCR.y + listBCR.height) < 0
-        ? -listBCR.height
+        ? -listBCR.height + triggerBCR.height
         : 0;
     const offsetX =
-      window.innerWidth - (listBCR.x + listBCR.width) < 0 ? -listBCR.width : 0;
-
-    console.log({
-      offsetY,
-      offsetX
-    });
-
+      window.innerWidth - (listBCR.x + listBCR.width) < 0
+        ? window.innerWidth - (listBCR.x + listBCR.width)
+        : 0;
     this.setState({
       offsetY,
       offsetX
@@ -83,8 +81,6 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <div style={{ height: "20rem" }} />
-        <div style={{ height: "20rem" }} />
         <button
           className="Button"
           ref={node => (this.trigger = node)}
