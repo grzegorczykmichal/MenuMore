@@ -1,2 +1,0 @@
-# MenuMore
-Created with CodeSandbox

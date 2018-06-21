@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 80vw;
+  height: 80vh;
+  background: gray;
+  margin: auto;
+  padding: 2rem;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.Menu {
+  position: absolute;
+}
+
+.Menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0.5rem 0;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 0.1rem 0.05rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.1rem;
+}
+
+.Menu li {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.Menu li:hover {
+  background: #efefef;
+}
