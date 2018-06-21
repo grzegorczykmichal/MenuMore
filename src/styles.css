@@ -1,11 +1,11 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  width: 80vw;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   background: gray;
   margin: auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
@@ -32,4 +32,8 @@
 
 .Menu li:hover {
   background: #efefef;
+}
+
+.Button {
+  float: right;
 }
