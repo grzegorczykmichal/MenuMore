@@ -8,16 +8,17 @@ body {
   text-align: center;
   width: 100%;
   height: 100vh;
-  background: gray;
+  background: #efefef;
   margin: auto;
   /* padding: 2rem; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  box-sizing: border-box;
 }
 
 .Menu {
   position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 .Menu ul {
@@ -26,8 +27,11 @@ body {
   padding: 0.5rem 0;
   background: #fff;
   text-align: left;
-  box-shadow: 0 0.1rem 0.05rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.1rem;
+  box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+  overflow-y: auto;
+  overflow: hidden;
+  height: 100%;
 }
 
 .Menu li {
@@ -42,4 +46,23 @@ body {
 
 .Button {
   float: left;
+  background: #ddd;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.Triggers {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background: red;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  /* align-content: flex-end; */
+  align-items: flex-end;
 }
